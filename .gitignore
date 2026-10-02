@@ -1,0 +1,48 @@
+# --- Build-Ausgaben ---
+target/
+build/
+out/
+dist/
+*.class
+*.jar
+*.war
+*.log
+
+# --- IDEs ---
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.project
+.classpath
+.settings/
+.factorypath
+
+# --- SonarQube / SonarLint ---
+.sonar/
+.scannerwork/
+.sonarlint/
+
+# --- Frontend (React) ---
+node_modules/
+coverage/
+.npm/
+npm-debug.log*
+yarn-error.log*
+
+# --- Lokale Konfiguration & Secrets ---
+.env
+.env.*
+!.env.example
+application-local.yml
+application-local.properties
+*.pem
+*.key
+*.p12
+*.jks
+
+# --- Betriebssystem ---
+.DS_Store
+Thumbs.db
+desktop.ini

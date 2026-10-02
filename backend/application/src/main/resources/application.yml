@@ -1,0 +1,30 @@
+# Zugangsdaten werden ausschließlich über Umgebungsvariablen gesetzt – niemals hier eintragen.
+spring:
+  application:
+    name: stundenplanung
+
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/stundenplanung}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    # Schema wird nur über Flyway gepflegt, Hibernate prüft lediglich die Übereinstimmung.
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+  flyway:
+    locations: classpath:db/migration
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${KEYCLOAK_ISSUER_URI:http://localhost:8180/realms/stundenplanung}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
