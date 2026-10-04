@@ -11,13 +11,12 @@
 
 ## 3. Commit-Richtlinien
 * **Umfang:** Atomic Commits (klein, in sich geschlossen, funktional). Keine Sammel-Commits.
-* **Format:** `[TICKET-ID] <typ>: <beschreibung>` (Sprache: Englisch, Form: Imperativ)
+* **Format:** `[TICKET-ID] <typ>: <beschreibung>`
 * **Beispiel:** `[PROJ-123] feat: add login endpoint`
 
 ## 4. Merge Requests (MRs) & Reviews
-* **Workflow:** Kein direkter Push auf Haupt-Branches (`main`/`develop`).
-* **Voraussetzungen:** Mindestens 2 Approvals erforderlich.
-* **Qualitätsschranken:** CI/CD-Pipelines und statische Code-Analyse (z. B. SonarQube) müssen fehlerfrei (grün) durchlaufen.
+* **Workflow:** Kein direkter Push auf Haupt-Branches (`main`/`dev`).
+* **Voraussetzungen:** Mindestens 1 Approval erforderlich.
 * **Umfang:** MRs klein halten (max. 300-500 Zeilen), um effektive Reviews zu ermöglichen.
 
 ## 5. Code Quality
