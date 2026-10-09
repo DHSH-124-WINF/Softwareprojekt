@@ -70,4 +70,19 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Formatierung nach formatter/formatter.xml. -->
+            <plugin>
+                <groupId>net.revelc.code.formatter</groupId>
+                <artifactId>formatter-maven-plugin</artifactId>
+                <version>2.27.0</version>
+                <configuration>
+                    <!-- configFile wird von scripts/format-code.* per -Dconfigfile übergeben -->
+                    <lineEnding>LF</lineEnding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

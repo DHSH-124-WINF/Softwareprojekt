@@ -24,7 +24,7 @@ dist/
 .scannerwork/
 .sonarlint/
 
-# --- Frontend (React) ---
+# --- Frontend (Vue) ---
 node_modules/
 coverage/
 .npm/

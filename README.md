@@ -7,7 +7,7 @@ Webanwendung zur Stundenplanung (ca. 40 Personen im Projektteam).
 | Bereich | Technologie | Zweck |
 |---|---|---|
 | Backend | Java Spring | REST-API und Geschäftslogik |
-| Frontend | React | Benutzeroberfläche im Browser |
+| Frontend | Vue + TypeScript | Benutzeroberfläche im Browser |
 | Datenbank | PostgreSQL + Flyway | Datenhaltung, versionierte Schema-Migrationen |
 | Authentifizierung | Keycloak | Login, Benutzer und Rollen |
 | Deployment | Docker + Pipeline | Automatisches Bauen und Ausrollen |
