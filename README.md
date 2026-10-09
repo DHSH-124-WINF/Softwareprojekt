@@ -4,14 +4,17 @@ Webanwendung zur Stundenplanung (ca. 40 Personen im Projektteam).
 
 ## Tech-Stack
 
-| Bereich | Technologie | Zweck |
-|---|---|---|
-| Backend | Java Spring | REST-API und Geschäftslogik |
-| Frontend | Vue + TypeScript | Benutzeroberfläche im Browser |
-| Datenbank | PostgreSQL + Flyway | Datenhaltung, versionierte Schema-Migrationen |
-| Authentifizierung | Keycloak | Login, Benutzer und Rollen |
-| Deployment | Docker + Pipeline | Automatisches Bauen und Ausrollen |
-| Versionierung | GitLab / GitHub | Quellcode, Merge Requests, Boards |
+| Bereich | Technologie | Version | Zweck |
+|---|---|---|---|
+| Backend | Java + Spring Boot | Java 25, Spring Boot 4.0.0 | REST-API und Geschäftslogik |
+| Backend-Build | Maven | 3.9.x (getestet mit 3.9.16) | Multi-Modul-Build |
+| Backend-Tests | JUnit/Spring Boot Test, ArchUnit | ArchUnit 1.4.1 | Tests, Prüfung der Modulgrenzen |
+| Frontend | Vue + TypeScript | noch festzulegen | Benutzeroberfläche im Browser |
+| Frontend-Tooling | Node.js, Prettier | Node 22 (getestet mit 22.23.1), Prettier ^3.6.2 | Build, Formatierung |
+| Datenbank | PostgreSQL + Flyway | noch festzulegen | Datenhaltung, versionierte Schema-Migrationen |
+| Authentifizierung | Keycloak | noch festzulegen | Login, Benutzer und Rollen |
+| Deployment | Docker + Pipeline | noch festzulegen | Automatisches Bauen und Ausrollen |
+| Versionierung | GitLab / GitHub | – | Quellcode, Merge Requests, Boards |
 
 **Datenbank:** Getrennte Dev- und Prod-Datenbank. Das Schema wird ausschließlich über nummerierte Flyway-Migrationen im Repo geändert (z. B. `V3__add_users_table.sql`), die beim Start automatisch laufen. Die Dev-Daten dürfen jederzeit zurückgesetzt werden, an Prod gibt es keine manuellen Änderungen.
 
