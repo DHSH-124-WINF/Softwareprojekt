@@ -1,48 +1,33 @@
-# --- Build-Ausgaben ---
+### Maven ###
 target/
-build/
+
+### IntelliJ IDEA ###
 out/
-dist/
-*.class
-*.jar
-*.war
-*.log
+!**/src/main/**/out/
+!**/src/test/**/out/
+.kotlin
 
-# --- IDEs ---
-.idea/
-*.iml
-*.iws
-*.ipr
-.vscode/
-.project
+### Eclipse ###
+.apt_generated
 .classpath
-.settings/
 .factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
 
-# --- SonarQube / SonarLint ---
-.sonar/
-.scannerwork/
-.sonarlint/
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
 
-# --- Frontend (Vue) ---
-node_modules/
-coverage/
-.npm/
-npm-debug.log*
-yarn-error.log*
+### VS Code ###
+.vscode/
 
-# --- Lokale Konfiguration & Secrets ---
-.env
-.env.*
-!.env.example
-application-local.yml
-application-local.properties
-*.pem
-*.key
-*.p12
-*.jks
-
-# --- Betriebssystem ---
+### Mac OS ###
 .DS_Store
-Thumbs.db
-desktop.ini

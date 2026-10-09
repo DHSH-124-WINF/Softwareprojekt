@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Stundenplan-Demo" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="de.uni.stundenplan.StundenplanDemo" />
+    <module name="cp-sat-solver-test" />
+    <option name="VM_PARAMETERS" value="--enable-native-access=ALL-UNNAMED -Dsun.misc.unsafe.memory.access=allow -Dstdout.encoding=UTF-8" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
