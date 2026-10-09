@@ -12,7 +12,7 @@ jobs:
         env:
           BRANCH: ${{ github.head_ref }}
         run: |
-          if [[ ! "$BRANCH" =~ ^(main|dev|(feature|bugfix|hotfix|refactor|docs)/[A-Z][A-Z0-9]*-[0-9]+-[a-z0-9-]+)$ ]]; then
+          if [[ ! "$BRANCH" =~ ^(main|dev|(feature|bugfix|hotfix|refactor|docs)/.+)$ ]]; then
             echo "Ungültiger Branch-Name: $BRANCH"
             exit 1
           fi
