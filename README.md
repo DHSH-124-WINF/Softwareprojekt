@@ -9,7 +9,7 @@ Webanwendung zur Stundenplanung (ca. 40 Personen im Projektteam).
 | Backend | Java + Spring Boot | Java 25, Spring Boot 4.0.0 | REST-API und Geschäftslogik |
 | Backend-Build | Maven | 3.9.x (getestet mit 3.9.16) | Multi-Modul-Build |
 | Backend-Tests | JUnit/Spring Boot Test, ArchUnit | ArchUnit 1.4.1 | Tests, Prüfung der Modulgrenzen |
-| Frontend | Vue + TypeScript | noch festzulegen | Benutzeroberfläche im Browser |
+| Frontend | Vue + TypeScript | Vue 3.5.43 | Benutzeroberfläche im Browser |
 | Frontend-Tooling | Node.js, Prettier | Node 22 (getestet mit 22.23.1), Prettier ^3.6.2 | Build, Formatierung |
 | Datenbank | PostgreSQL + Flyway | noch festzulegen | Datenhaltung, versionierte Schema-Migrationen |
 | Authentifizierung | Keycloak | noch festzulegen | Login, Benutzer und Rollen |

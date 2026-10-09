@@ -8,5 +8,8 @@
   },
   "devDependencies": {
     "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "vue": "3.5.43"
   }
 }
