@@ -1,4 +1,4 @@
-# Softwareprojekt DHSH – Stand 25.09.2026
+# Softwareprojekt DHSH
 
 Webanwendung zur Stundenplanung (ca. 40 Personen im Projektteam).
 
